@@ -48,3 +48,5 @@ Thumbs.db
 *.mov
 *.wmv
 
+# Ignorar archivos específicos
+apuntes-no-git.txt

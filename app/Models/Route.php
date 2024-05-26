@@ -13,6 +13,7 @@ class Route extends Model
         'technical_id',
         'latitude',
         'longitude',
+        'batery',
         'location_time',
     ];
 }
