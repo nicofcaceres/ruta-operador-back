@@ -39,6 +39,11 @@
                     <input type="number" class="form-control" id="phone_number" name="phone_number" aria-describedby="mobile-help" required value="{{$user->phone_number}}">
                     <div id="mobile-help" class="form-text">Digite el numero de celular</div>
                 </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="address" name="address" aria-describedby="mobile-help" maxlength="120" >
+                    <div id="mobile-help" class="form-text">Digite el la direccion fisitca del usuario</div>
+                </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="is_technical" name="is_technical"  @if ($user->is_technical==1)checked @endif>
                     <label class="form-check-label" for="is-technical">Es tecnico de ruta</label>

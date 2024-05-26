@@ -84,6 +84,7 @@ class UserController extends Controller
             'doc_type' => 'required',
             'document' => 'required',
             'phone_number' => ['required','numeric'],
+            'address' => 'string|max:120'
         ]);
         $validated['is_technical'] = (empty($request->is_technical))?0:1;
         User::find($user)->update($validated);
