@@ -25,6 +25,7 @@ class User extends Authenticatable
         'doc_type',
         'document',
         'phone_number',
+        'address',
         'is_technical',
     ];
 

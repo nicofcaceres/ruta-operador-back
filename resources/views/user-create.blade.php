@@ -44,6 +44,11 @@
                     <div id="mobile-help" class="form-text">Digite el numero de celular</div>
                 </div>
                 <div class="mb-3">
+                    <label for="address" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="address" name="address" aria-describedby="mobile-help" maxlength="120" >
+                    <div id="mobile-help" class="form-text">Digite el la direccion fisitca del usuario</div>
+                </div>
+                <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password" name="password" required>
                 </div>

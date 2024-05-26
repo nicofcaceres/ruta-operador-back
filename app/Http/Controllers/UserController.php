@@ -42,6 +42,7 @@ class UserController extends Controller
             'document' => 'required',
             'phone_number' => ['required','numeric'],
             'password' => 'required',
+            'address' => 'string|max:120'
         ]);
 
         $validated['password'] = Hash::make( $validated['password'] );
