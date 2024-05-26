@@ -23,6 +23,7 @@
                         <th>Documento</th>
                         <th>Email</th>
                         <th>Telefono</th>
+                        <th>Direccion</th>
                         <th>Es tecnico</th>
                         <th colspan="2">Acciones</th>
                     </tr>
@@ -35,6 +36,7 @@
                         <td> {{$user->getFullDocument()}}</td>
                         <td> {{$user->email}}</td>
                         <td> {{$user->phone_number}}</td>
+                        <td> {{$user->address}}</td>
                         <td>  @if ($user->is_technical==1) <span class="text-success-emphasis">SI</span> @else <span class="text-warning-emphasis">NO</span>@endif</td>
                         <td>
                             <button type="button" class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#userEditModal-{{$user->id}}">Editar</button>
